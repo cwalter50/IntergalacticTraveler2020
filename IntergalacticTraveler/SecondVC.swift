@@ -9,10 +9,22 @@ import UIKit
 
 class SecondVC: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var myimageView: UIImageView!
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    var myText = "Alex"
+    
+    var myImage = UIImage()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        myimageView.image = myImage
+        
+        myLabel.text = myText
+    
     }
     
 
